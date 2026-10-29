@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Download Goalpost</title>
+<style>
+  :root{color-scheme:dark}
+  body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro",system-ui,sans-serif;background:#0b0e14;color:#e6e9ef;margin:0;min-height:100vh;display:flex;justify-content:center;padding:4rem 1.5rem}
+  main{max-width:640px;width:100%}
+  h1{font-size:2rem;margin:0 0 .25rem}
+  h2{font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;color:#8b93a7;margin:2.5rem 0 .75rem}
+  p{color:#aab2c5;line-height:1.5}
+  a{color:#7da2ff;text-decoration:none}
+  .card{display:flex;justify-content:space-between;align-items:center;padding:.9rem 1.1rem;border:1px solid #232838;border-radius:10px;margin:.5rem 0;background:#12151d}
+  .card:hover{border-color:#3b4560}
+  .card .name{color:#e6e9ef;font-weight:500}
+  .card .meta{color:#8b93a7;font-size:.85rem}
+  code{background:#1a1f2c;padding:.15rem .4rem;border-radius:6px;font-size:.85rem}
+  pre{background:#12151d;border:1px solid #232838;border-radius:10px;padding:.9rem 1.1rem;overflow-x:auto}
+  .pill{font-size:.7rem;border:1px solid #3b4560;border-radius:99px;padding:.1rem .5rem;color:#8b93a7;margin-left:.5rem}
+</style>
+</head>
+<body>
+<main>
+  <h1>Download Goalpost</h1>
+  <p>Desktop app and the intentd daemon. Artifacts served from
+     <a href="https://github.com/solvys-technologies/goalpost-releases/releases">solvys-technologies/goalpost-releases</a>.</p>
+
+  <h2>Desktop app — v0.1.0</h2>
+  <a class="card" href="https://github.com/solvys-technologies/goalpost-releases/releases/download/v0.1.0/Goalpost-0.1.0.AppImage">
+    <span class="name">Goalpost-0.1.0.AppImage</span><span class="meta">Linux x64 · ~233 MB</span></a>
+  <a class="card" href="https://github.com/solvys-technologies/goalpost-releases/releases/download/v0.1.0/goalpost_0.1.0_amd64.deb">
+    <span class="name">goalpost_0.1.0_amd64.deb</span><span class="meta">Linux x64 · ~181 MB</span></a>
+  <div class="card"><span class="name">Goalpost-0.1.0.dmg<span class="pill">building</span></span><span class="meta">macOS arm64</span></div>
+
+  <h2>Daemon (intentd)</h2>
+  <p>One-line install — pulls the sitter, verifies sha256, pins the alpha channel:</p>
+  <pre><code>curl -fsSL https://github.com/solvys-technologies/goalpost-releases/releases/download/sitter-latest/install.sh | sh</code></pre>
+  <a class="card" href="https://github.com/solvys-technologies/goalpost-releases/releases/download/sitter-latest/intentd-x86_64-unknown-linux-gnu.tar.xz">
+    <span class="name">intentd-sitter</span><span class="meta">x86_64 Linux · rolling</span></a>
+  <a class="card" href="https://github.com/solvys-technologies/goalpost-releases/releases/download/v0.11.75-3/intentd-x86_64-unknown-linux-gnu.tar.xz">
+    <span class="name">intentd v0.11.75</span><span class="meta">x86_64 Linux · daemon + tailcat</span></a>
+  <p>After install, <code>intentd serve</code> starts the daemon; the sitter self-updates on the alpha channel.</p>
+</main>
+</body></html>
